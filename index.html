@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Météo</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+        <div class="app-container">
+            
+            <main class="main-panel">
+                
+                <header class="app-header">
+                    <h1 data-translate-key="title">Mon App Météo</h1>
+                    <div class="settings-toggles">
+                        <button id="theme-toggle-button">☀️</button>
+                        <button id="lang-toggle-button">EN</button>
+                    </div>
+                </header>
+    
+                <section class="search-tab">
+                    <input type="text" id="city-input" placeholder="Entrez le nom d'une ville..." data-translate-key="placeholder">
+                    <button id="search-button" data-translate-key="search">Rechercher</button>
+                </section>
+    
+                <section class="data-tab" id="weather-data">
+                    <div class="placeholder">
+                        <p data-translate-key="prompt">Veuillez rechercher une ville pour afficher les données météo.</p>
+                    </div>
+                </section>
+            </main>
+    
+            <aside class="sidebar">
+                <section class="last-searches">
+                    <h3 data-translate-key="lastSearches">Dernières recherches</h3>
+                    <ul id="search-history">
+                        </ul>
+                </section>
+    
+                <section class="weather-map">
+                    <h3 data-translate-key="weatherMap">Carte Météo</h3>
+                    <div id="map"></div>
+                </section>
+                
+                </aside>
+    
+        </div> <footer class="contact-footer">
+            <h3>Mes Liens</h3>
+            <ul>
+                <li><a href="https://timothee-kiehl.itch.io" target="_blank" rel="noopener noreferrer">itch.io</a></li>
+                <li><a href="https://github.com/BazeOnigiri" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/timoth%C3%A9e-kiehl-0a0742273/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </footer>
+        </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <script src="script.js"></script>
+</body>
+</html>

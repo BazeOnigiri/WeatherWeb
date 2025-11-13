@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiKey = '11340d4fb9bf9a40bc5694b506957964';
+    const apiKey = config.API_KEY;
     const translations = {
         'fr': {
             'title': 'Mon App Météo',
